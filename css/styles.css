@@ -17,6 +17,7 @@
     --color-slate-500: #68778D;
     --color-slate-300: #D5E1EF;
     --color-white: #FFFFFF;
+    --color-link: hsl(228, 45%, 44%);
 
     /* Tipografía */
     /* 1rem = 10px, establecemos el font-size base en 62.5% del valor por defecto del navegador (16px) */
@@ -36,13 +37,65 @@
 }
 
 /* * Layout principal (grid, flexbox) | layout.css */
+html {
+    font-size: var(--font-size);
+}
+
 body {
     background-color: var(--color-slate-300);
     font-family: var(--font-body);
     font-size: 1.5rem;
     font-weight: var(--font-weight-normal);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* * Estilos de componentes (botones, formularios, tarjetas, etc.) | components.css */
+.card {
+    background-color: var(--color-white);
+    width: 32rem;
+    padding: var(--space-200);
+    padding-bottom: var(--space-500);
+    border-radius: 2rem;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: var(--space-300);
+}
+
+.card__title {
+    font-family: var(--font-body);
+    font-size: 2.2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-slate-900);
+    margin: 0;
+    margin-bottom: var(--space-200);
+    text-align: center;
+}
+
+.card__description {
+    color: var(--color-slate-500);
+    margin: 0;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.attribution a {
+    color: var(--color-link);
+}
 
 /* * Media queries para pantallas más grandes | responsive.css */
+/* * No son necesarios ya que los estilos se adaptan bien sin media queries */
