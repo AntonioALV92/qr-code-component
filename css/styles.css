@@ -1,0 +1,48 @@
+/* * Estilos generales y variables CSS | base.css */
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 400;
+    src: url('../assets/fonts/Outfit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 700;
+    src: url('../assets/fonts/Outfit-Bold.ttf') format('truetype');
+}
+
+:root {
+    /* Colores */
+    --color-slate-900: #1F314F;
+    --color-slate-500: #68778D;
+    --color-slate-300: #D5E1EF;
+    --color-white: #FFFFFF;
+
+    /* Tipografía */
+    /* 1rem = 10px, establecemos el font-size base en 62.5% del valor por defecto del navegador (16px) */
+    --font-size: 62.5%;
+    --font-body: 'Outfit', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Espaciado */
+    --space-500: 4rem;
+    --space-300: 2.4rem;
+    --space-200: 1.6rem;
+
+    /* Tamaños de contenedores */
+    /* --container-width-mobile: 100%;
+    --container-width-desktop: 80%; */
+}
+
+/* * Layout principal (grid, flexbox) | layout.css */
+body {
+    background-color: var(--color-slate-300);
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-normal);
+}
+
+/* * Estilos de componentes (botones, formularios, tarjetas, etc.) | components.css */
+
+/* * Media queries para pantallas más grandes | responsive.css */
